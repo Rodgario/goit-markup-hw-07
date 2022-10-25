@@ -352,6 +352,20 @@
                </span>
             </div>
          </div>
+         <div class="newsletter">
+            <p>Zapisz się do newslettera!</p>
+            <form action="javascript:void(0);">
+               <label for="footer-mail">
+                  <input type="email" name="footer-mail" id="footer-mail" placeholder="E-mail">
+               </label>
+               <div class="footer-newsletter-submit">
+                  <span>Zapisz się</span>
+                  <svg class="icon-send">
+                     <use href="images/icons.svg#icon-send"></use>
+                  </svg>
+               </div>
+            </form>
+         </div>
       </div>
    </footer>
 
@@ -359,6 +373,45 @@
       <div class="modalWindow">
          <div class="closeButton" data-modal-close>
             X
+         </div>
+         <div class="modal-form">
+            <h1>Zostaw swoje dane w formularzu poniżej</h1>
+            <form action="javascript:void(0);">
+               <label for="fname">Imię
+                  <svg class="form-icon">
+                     <use href="images/icons.svg#icon-person"></use>
+                  </svg>
+                  <input type="text" id="fname" name="name">
+               </label>
+               <label for="fphone">Telefon
+                  <svg class="form-icon">
+                     <use href="images/icons.svg#icon-phone"></use>
+                  </svg>
+                  <input type="text" id="fphone" name="phone">
+               </label>
+               <label for="fmail">Email
+                  <svg class="form-icon">
+                     <use href="images/icons.svg#icon-mail"></use>
+                  </svg>
+                  <input type="email" id="fmail" name="email">
+               </label>
+               <label for="fcomment">Komentarz
+                  <textarea name="comment" id="fcomment" class="form-textarea" placeholder="Wprowadź tekst"></textarea>
+               </label>
+               <div class="rules-accept-block">
+                  <label for="rulesAccept" class="test">
+                     <svg class="form-checkbox-icon checked">
+                        <use href="images/icons.svg#icon-checked"></use>
+                     </svg>
+                     <svg class="form-checkbox-icon unchecked">
+                        <use href="images/icons.svg#icon-unchecked"></use>
+                     </svg>
+                     <input type="checkbox" name="rulesAccept" id="rulesAccept">
+                     Oświadczam iż akceptuję <span>Regulamin</span> i <span>Politykę prywatności.</span>
+                  </label>
+               </div>
+               <input type="submit" value="Wyślij" class="form-button-style">
+            </form>
          </div>
       </div>
    </div>
