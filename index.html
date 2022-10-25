@@ -1,196 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <Title>goit-markup-hw-01</Title>
+
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/modern-normalize.css">
+   <Title>goit-markup-hw-01</Title>
 </head>
 
 <body>
    <header>
-      <a href="index.html" id="header">WebStudio</a>
-      <nav>
-         <div class="col-sm">
-            <a href="index.html">Agencja</a>
+      <div class="container header-flex">
+         <a href="index.html" class="headerLogo">Web</a>
+         <nav>
+            <div class="col-sm">
+               <a href="index.html">Agencja</a>
+            </div>
+            <div class="col-sm">
+               <a href="portfolio.html">Portfolio</a>
+            </div>
+            <div class="col-sm">
+               <a href="#kontakt">Kontakt</a>
+            </div>
+         </nav>
+         <div class="headerContact">
+            <ul>
+               <li>
+                  <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+               </li>
+               <li>
+                  <a href="tel:+48111111111">+48 111 111 111</a>
+               </li>
+            </ul>
          </div>
-         <div class="col-sm">
-            <a href="portfolio.html">Portfolio</a>
-         </div>
-         <div class="col-sm">
-            <a href="#kontakt">Kontakt</a>
-         </div>
-      </nav>
-      <div>
-         <ul>
-            <li>
-               <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
-               <a href="tel:+48111111111">+48 111 111 111</a>
-            </li>
-         </ul>
       </div>
    </header>
-   <br>
-<main>
-   <section>
-      <!--Czy jak dodam do section div to nie zrobi się sekcja w sekcji?-->
-      
-      <div>
-         <h1>
-          EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-         </h1>
-         <button type="button">
-            Zamów usługę
-         </button>
-      </div>
-   </section>
-   <br>
-   <br>
-   <section>
-      <table>
-      <thead>
-         <tr>
-            <th>Lorem Ipsum</th>
-            <th>Lorem Ipsum</th>
-            <th>Lorem Ipsum</th>
-            <th>Lorem Ipsum</th>
-            <th>Lorem Ipsum</th>
-         </tr>
-      </thead>
+   <main>
 
-      <tbody>
-         <tr>
-            <td>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
-               Sed non sodales dui. Interdum et malesuada
-            </td>
-            <td>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
-               Sed non sodales dui. Interdum et malesuada
-            </td>
-            <td>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
-               Sed non sodales dui. Interdum et malesuada
-            </td>
-            <td>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
-               Sed non sodales dui. Interdum et malesuada
-            </td>
-            <td>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
-               Sed non sodales dui. Interdum et malesuada
-            </td>
-         </tr>
-      </tbody>
-   </table>
-   </section>
+      <section class="hero">
+         <!--Czy jak dodam do section div to nie zrobi się sekcja w sekcji?-->
+         <div class="container heroContainer">
 
-   <section>
-      <table>
-         <caption>
+            <h1>
+               EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+            </h1>
+            <button type="button" class="heroButton">
+               Zamów usługę
+            </button>
+
+         </div>
+      </section>
+      <section>
+         <div class="container loremTilesSet">
+            <div class="loremTiles">
+               <p class="loremTitle">LOREM IPSUM</p>
+               <p class="loremDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                  sodales dui. Interdum et malesuada</p>
+            </div>
+            <div class="loremTiles">
+               <p class="loremTitle">LOREM IPSUM</p>
+               <p class="loremDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                  sodales dui. Interdum et malesuada</p>
+            </div>
+            <div class="loremTiles">
+               <p class="loremTitle">LOREM IPSUM</p>
+               <p class="loremDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                  sodales dui. Interdum et malesuada</p>
+            </div>
+            <div class="loremTiles">
+               <p class="loremTitle">LOREM IPSUM</p>
+               <p class="loremDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                  sodales dui. Interdum et malesuada</p>
+            </div>
+         </div>
+      </section>
+
+      <section>
+         <div class="container imageSetMargin">
             <h1>Czym się zajmujemy</h1>
-         </caption>
-         <tr>
-            <th>
-               <img src="images/Konkuter.jpg"
-               alt="web design"
-               width="370" height="294"
-               />
-            </th>
-            <th>
-               <img src="images/Konkuter2.jpg"
-               alt="E-commerc"
-               width="370" height="294"
-               />
-            </th>
-            <th>
-               <img src="images/Konkuter3.jpg"
-               alt="UI Design"
-               width="370" height="294"
-               />
-            </th>
-         </tr>
-      </table>
-   </section>
+            <div class="imageSet">
+               <img src="images/Konkuter.jpg" alt="web design" width="370" height="294" />
 
-   <section>
-      <article>
-         <table>
-            <caption>
+               <img src="images/Konkuter2.jpg" alt="E-commerce" width="370" height="294" />
+               <img src="images/Konkuter3.jpg" alt="UI Design" width="370" height="294" />
+            </div>
+         </div>
+      </section>
+
+      <section>
+         <section class="teamSection">
+            <div class="container">
                <h1>Nasz zespół</h1>
-            </caption>
-            <thead>
-               <tr>
-                  <th>
-                     <img src="images/Kierownik.jpg"
-                     alt="John Doe"
-                     />
-                     <p>
-                        <strong>John Doe</strong>
-                     </p>
-                     <p>
-                        Product Designer
-                     </p>
-                  </th>
-                  <th>
-                     <img src="images/Kjerownik2.jpg"
-                     alt="Jane Doe"
-                     />
-                     <p>
-                        <strong>John Doe</strong>
-                     </p>
-                     <p>
-                        Frontend Developer
-                     </p>
-                  </th>
-                  <th>
-                     <img src="images/Kjerownik3.jpg"
-                     alt="John Doe"
-                     />
-                     <p>
-                        <strong>John Doe</strong>
-                     </p>
-                     <p>
-                        Marketing
-                     </p>
-                  </th>
-                  <th>
-                     <img src="images/Kjerownik4.jpg"
-                     alt="John Doe"
-                     />
-                     <p>
-                        <strong>John Doe</strong>
-                     </p>
-                     <p>
-                        UI Designer
-                     </p>
-                  </th>
-               </tr>
-            </thead>
-         </table>
+               <article>
+                  <div class="imageSet">
+                     <div class="personImage">
+                        <img src="images/Kierownik.jpg" alt="John Doe" />
+                        <p>
+                           <strong>John Doe</strong>
+                        </p>
+                        <p>
+                           Product Designer
+                        </p>
+                     </div>
+                     <div class="personImage">
+                        <img src="images/Kjerownik2.jpg" alt="Jane Doe" />
+                        <p>
+                           <strong>John Doe</strong>
+                        </p>
+                        <p>
+                           Frontend Developer
+                        </p>
+                     </div>
+                     <div class="personImage">
+                        <img src="images/Kjerownik3.jpg" alt="John Doe" />
+                        <p>
+                           <strong>John Doe</strong>
+                        </p>
+                        <p>
+                           Marketing
+                        </p>
+                     </div>
+                     <div class="personImage">
+                        <img src="images/Kjerownik4.jpg" alt="John Doe" />
+                        <p>
+                           <strong>John Doe</strong>
+                        </p>
+                        <p>
+                           UI Designer
+                        </p>
+                     </div>
+                  </div>
+               </article>
+            </div>
+         </section>
+   </main>
 
-      </article>
-   </section>
-</main>
-
-<footer>
-   <a href="#header">WebStudio</a>
- <a href="#kontakt" id="kontakt"></a>     
-      <div>
-         <ul>
-            <li>
-               <h5>
+   <footer>
+      <div class="container">
+         <a href="index.html" class="footerLogo">Web</a>
+         <div>
+            <ul>
+               <li>
                   m. Warszawa, Aleje Jerozolimskie 21
-               </h5>
-            </li>
-            <li>
-               <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
-               <a href="tel:+48111111111">+48 111 111 111</a>
-            </li>
-         </ul>
+               </li>
+               <li>
+                  <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+               </li>
+               <li>
+                  <a href="tel:+48111111111">+48 111 111 111</a>
+               </li>
+            </ul>
+         </div>
       </div>
-</footer>
+   </footer>
 </body>

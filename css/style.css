@@ -5,30 +5,276 @@ body {
     color: #212121;
 }
 
-.filterMenu > li {
+header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header-flex {
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.headerLogo {
+    font-family: Raleway;
+    text-decoration: none;
+    color: #2197f3;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.headerLogo::after {
+    content: "Studio";
+    color: #000;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 93px;
+
+}
+
+nav>.col-sm {
+    margin-right: 46px;
+    font-weight: 500;
+}
+
+nav>.col-sm:last-child {
+    margin-right: 0;
+}
+
+nav .col-sm a {
+    text-decoration: none;
+    color: #212121;
+    font-size: 14px;
+}
+
+nav .col-sm a:hover {
+    color: #2196F3;
+}
+
+.headerContact {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 364px;
+}
+
+.headerContact ul li {
+    display: inline;
+    margin: 0 0 0 30px;
+    font-size: 14px;
+}
+
+.headerContact ul li a {
+    text-decoration: none;
+    color: #757575;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filterMenu {
+    margin-top: 94px;
+}
+
+.filterMenu {
+    display: flex;
+    justify-content: center;
+}
+
+.filterMenu>li {
+    display: inline;
     background-color: #f5f4fa;
     font-weight: 500;
     line-height: 162%;
     cursor: pointer;
+    margin-left: 8px;
+    padding: 6px 22px;
+    border-radius: 4px;
 }
 
-.filterMenu > li:hover {
+.filterMenu>li:first-child {
+    margin-left: 0;
+}
+
+.filterMenu>li:hover {
     background-color: #2196f3;
+    color: #fff;
+}
+
+.gridImages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.imagePanel {
+    border: 1px solid #eee;
 }
 
 .imagePanelTitle {
     font-weight: 700;
     font-size: 18px;
     line-height: 200%;
+    width: 322px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
 }
 
 .imagePanelDescription {
     color: #757575;
     line-height: 188%;
+    width: 322px;
+    margin: 4px auto 20px auto;
 }
+
+.hero {
+    background-color: #2F303A;
+    padding: 200px 0 200px 0;
+}
+
+.hero h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 44px;
+    color: #fff;
+    width: 696px;
+    line-height: 60px;
+}
+
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroButton {
+    background-color: #2196f3;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 42px 10px 42px;
+    color: #fff;
+}
+
 
 footer {
     background-color: #2f303a;
     color: #fff;
+    padding: 60px 0 60px 0;
 }
 
+.footerLogo {
+    font-family: Raleway;
+    text-decoration: none;
+    color: #2197f3;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.footerLogo::after {
+    content: "Studio";
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+footer li {
+    margin-top: 9px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #757575;
+}
+
+
+.loremFields {
+    padding: 94px;
+}
+
+.teamSection {
+    padding: 94px 0 94px 0;
+    margin-top: 94px;
+    background-color: #F5F4FA;
+}
+
+section h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.imageSet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.personImage {
+    object-fit: cover;
+    background-color: #fff; 
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.personImage img {
+    width: 270px;
+    height: 260px;
+}
+
+
+.personImage p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #212121;
+    line-height: 19px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.personImage p:last-child {
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.imageSetMargin {
+    margin-top: 94px;
+}
+
+.loremTilesSet {
+    display: flex;
+    flex-direction: row;
+    margin-top: 94px;
+}
+
+.loremTitle {
+    font-weight: 700;
+    font-size: 14px;
+    color: #212121;
+}
+
+.loremDesc {
+    font-weight: 400;
+    font-size: 14px;
+    color: #757575;
+    line-height: 24px;
+}
