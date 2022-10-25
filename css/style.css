@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+
+body {
+    font-family: Roboto, sans-serif, Raleway, sans-serif;
+    color: #212121;
+}
+
+.filterMenu > li {
+    background-color: #f5f4fa;
+    font-weight: 500;
+    line-height: 162%;
+    cursor: pointer;
+}
+
+.filterMenu > li:hover {
+    background-color: #2196f3;
+}
+
+.imagePanelTitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 200%;
+}
+
+.imagePanelDescription {
+    color: #757575;
+    line-height: 188%;
+}
+
+footer {
+    background-color: #2f303a;
+    color: #fff;
+}
+
