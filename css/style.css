@@ -59,18 +59,31 @@ nav .col-sm a:hover {
 .headerContact {
     display: flex;
     justify-content: flex-end;
-    margin-left: 364px;
+    margin-left: 345px;
+}
+
+.headerContact ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 .headerContact ul li {
     display: inline;
     margin: 0 0 0 30px;
     font-size: 14px;
+    padding: 0;
+}
+
+.headerContact ul li:hover {
+    filter: brightness(0);
+    filter: invert(41%) sepia(79%) saturate(1755%) hue-rotate(188deg) brightness(103%) contrast(91%);
 }
 
 .headerContact ul li a {
+    display: inline-block;
     text-decoration: none;
     color: #757575;
+    margin-left: 10px;
 }
 
 .container {
@@ -99,11 +112,15 @@ nav .col-sm a:hover {
     border-radius: 4px;
 }
 
+.filterMenu li:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .filterMenu>li:first-child {
     margin-left: 0;
 }
 
-.filterMenu>li:hover {
+.filterMenu > li:hover {
     background-color: #2196f3;
     color: #fff;
 }
@@ -117,6 +134,10 @@ nav .col-sm a:hover {
 
 .imagePanel {
     border: 1px solid #eee;
+}
+
+.imagePanel:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .imagePanelTitle {
@@ -137,8 +158,11 @@ nav .col-sm a:hover {
 }
 
 .hero {
-    background-color: #2F303A;
     padding: 200px 0 200px 0;
+    background-image: url("../images/heroImg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(47, 48, 58, 0.4);
 }
 
 .hero h1 {
@@ -170,6 +194,7 @@ footer {
     background-color: #2f303a;
     color: #fff;
     padding: 60px 0 60px 0;
+    margin-top: 94px;
 }
 
 .footerLogo {
@@ -190,6 +215,7 @@ footer ul {
     padding: 0;
     font-size: 14px;
     margin-top: 20px;
+    width: auto;
 }
 
 footer li {
@@ -201,6 +227,9 @@ footer a {
     color: #757575;
 }
 
+.footerFloat {
+    float: left;
+}
 
 .loremFields {
     padding: 94px;
@@ -247,13 +276,12 @@ section h1 {
     padding-top: 20px;
 }
 
-.personImage p:last-child {
+.personImage p:last-of-type {
     font-weight: 400;
     font-size: 16px;
     color: #757575;
     margin: 0;
     padding-top: 10px;
-    padding-bottom: 30px;
 }
 
 .imageSetMargin {
@@ -263,6 +291,7 @@ section h1 {
 .loremTilesSet {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-top: 94px;
 }
 
@@ -277,4 +306,145 @@ section h1 {
     font-size: 14px;
     color: #757575;
     line-height: 24px;
+}
+
+.loremIcon {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.iconSetAtuty {
+    width: 70px;
+}
+
+.contactEnvelope {
+    width: 16px;
+    height: 12px;
+}
+
+.contactPhone {
+    width: 10px;
+    height: 16px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    width: 206px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 18px;
+}
+
+.iconSocial {
+    height: 20px;
+    width: 20px;
+}
+
+.clientContainer {
+    margin-top: 94px;
+}
+
+.clientSet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.clientBox {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientBox:hover {
+    border: 1px solid #2196f3;
+}
+
+.clientBox:hover .clientLogo {
+    filter: brightness(0);
+    filter: invert(41%) sepia(79%) saturate(1755%) hue-rotate(188deg) brightness(103%) contrast(91%);
+}
+
+.clientLogo {
+    width: 106px;
+    
+}
+
+.containerFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerSocialSection {
+    margin-left: 70px;
+}
+
+.footerSocialSection > p {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.socialBox {
+    width: 206px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.footerIconSocial {
+    height: 20px;
+    width: 20px;
+    background-clip: padding-box;
+    filter: brightness(0) invert(1);
+}
+
+.footerCircle {
+    display: flex;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerCircle:hover {
+    background-color: #2196F3;
+    cursor: pointer;
+}
+
+.socialCircle {
+    height: 44px;
+    width: 44px;
+    border-radius: 100%;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialCircle:hover {
+    background-color: #2196f3;
+    cursor: pointer;
+}
+
+.socialCircle:hover .iconSocial {
+    filter: brightness(0) invert(1);
+}
+
+.iconSocial:hover {
+    filter: brightness(0) invert(1);
 }
