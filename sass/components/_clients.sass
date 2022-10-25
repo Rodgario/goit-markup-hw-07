@@ -1,0 +1,25 @@
+.client-container
+  margin-top: 94px
+
+.client-set
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.client-set__box
+  display: flex
+  width: 170px
+  height: 92px
+  border: 1px solid $client-box-border
+  justify-content: center
+  align-items: center
+
+  &:hover
+    border: 1px solid $blue
+
+    .clientLogo
+      filter: brightness(0)
+      filter: invert(41%) sepia(79%) saturate(1755%) hue-rotate(188deg) brightness(103%) contrast(91%)
+
+.client-set__logo
+  width: 106px

@@ -1,0 +1,63 @@
+footer
+  background-color: $footer-bg-color
+  color: $white
+  padding: 60px 0 60px 0
+  margin-top: 94px
+
+.footer-logo
+  font-family: $font-secondary
+  text-decoration: none
+  color: $logo-blue
+  font-size: 26px
+  font-weight: 700
+
+  &::after
+    content: "Studio"
+    color: $white
+
+footer
+  ul
+    list-style: none
+    padding: 0
+    font-size: 14px
+    margin-top: 20px
+    width: auto
+
+  li
+    margin-top: 9px
+
+  a
+    text-decoration: none
+    color: $light-grey
+
+  .footer-social
+  margin-left: 70px
+
+  > p
+    font-weight: 700
+    font-size: 14px
+
+.footer-social__box
+  width: 206px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.footer-social__icon
+  height: 20px
+  width: 20px
+  background-clip: padding-box
+  filter: brightness(0) invert(1)
+
+.footer-social__circle
+  display: flex
+  border-radius: 100%
+  background-color: rgba(255, 255, 255, 0.1)
+  width: 44px
+  height: 44px
+  justify-content: center
+  align-items: center
+
+  &:hover
+    background-color: $blue
+    cursor: pointer

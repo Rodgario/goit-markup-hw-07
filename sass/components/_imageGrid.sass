@@ -1,0 +1,48 @@
+.images-grid
+  display: flex
+  flex-wrap: wrap
+  gap: 30px
+  margin-top: 50px
+
+.image-panel
+  border: 1px solid $image-panel-border-color
+  transition: box-shadow 250ms
+
+  &:hover
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16)
+
+    .blueBgHover
+      transition: top 250ms
+      top: 0
+
+.image-panel__title
+  font-weight: 700
+  font-size: 18px
+  line-height: 200%
+  width: 322px
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 0
+
+.image-panel__description
+  color: $light-grey
+  line-height: 188%
+  width: 322px
+  margin: 4px auto 20px auto
+  
+.image-panel--hover
+  position: relative
+  overflow: hidden
+
+.image-panel__blue-bg--hover
+  position: absolute
+  height: 100%
+  top: 400px
+  font-weight: 400
+  padding-top: 49px
+  padding-left: 24px
+  padding-right: 45px
+  font-size: 18px
+  line-height: 28px
+  background-color: rgba(33, 150, 243, 0.9)
+  color: $white

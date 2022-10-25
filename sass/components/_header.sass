@@ -1,0 +1,65 @@
+header
+  border-bottom: 1px solid $header-border-color
+
+.header-flex
+  height: 80px
+  justify-content: space-between
+  align-items: center
+  display: flex
+  flex-direction: row
+
+.header-flex__logo
+  font-family: $font-secondary
+  text-decoration: none
+  color: $logo-blue
+  font-size: 26px
+  font-weight: 700
+
+  &::after
+    content: "Studio"
+    color: $black
+
+    .header-contact
+  display: flex
+  justify-content: flex-end
+  margin-left: 345px
+
+  ul
+    list-style-type: none
+    padding: 0
+
+    li
+      display: inline
+      margin: 0 0 0 30px
+      font-size: 14px
+      padding: 0
+
+      &:hover
+        filter: brightness(0)
+        filter: invert(41%) sepia(79%) saturate(1755%) hue-rotate(188deg) brightness(103%) contrast(91%)
+
+      a
+        display: inline-block
+        text-decoration: none
+        color: $light-grey
+        margin-left: 10px
+.contact-envelope-icon
+  width: 16px
+  height: 12px
+
+.contact-phone-icon
+  width: 10px
+  height: 16px
+
+.header-active
+  position: relative
+
+  &::after
+    position: absolute
+    content: ""
+    bottom: -32px
+    left: 0
+    height: 4px
+    width: 100%
+    background: $blue
+    border-radius: 2px
